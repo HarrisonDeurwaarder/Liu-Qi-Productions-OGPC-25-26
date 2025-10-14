@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8o0h6lr6tkne"]
+[gd_scene load_steps=3 format=3 uid="uid://cbvsqq3jt5whl"]
 
 [ext_resource type="Texture2D" uid="uid://cksiax4efous3" path="res://Assets/icon.svg" id="1_yp7o1"]
-[ext_resource type="Script" path="res://Scripts/sprite_2d.gd" id="2_p4upn"]
+[ext_resource type="Script" uid="uid://dmfq7jrrmkrnc" path="res://Scripts/sprite_2d.gd" id="2_p4upn"]
 
 [node name="WORLD" type="Node2D"]
 
