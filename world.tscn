@@ -1,12 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbvsqq3jt5whl"]
+[gd_scene load_steps=4 format=3 uid="uid://cbvsqq3jt5whl"]
 
+[ext_resource type="Script" uid="uid://cmeua5tnlvhd3" path="res://Scripts/character_body_2d.gd" id="1_tlwt5"]
 [ext_resource type="Texture2D" uid="uid://cksiax4efous3" path="res://Assets/icon.svg" id="1_yp7o1"]
 [ext_resource type="Script" uid="uid://dmfq7jrrmkrnc" path="res://Scripts/sprite_2d.gd" id="2_p4upn"]
 
 [node name="WORLD" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-3, -12)
-scale = Vector2(3.45312, 4.21875)
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_tlwt5")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(258, 298)
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(259.00003, 346)
+scale = Vector2(1.2382805, 1.2773439)
 texture = ExtResource("1_yp7o1")
 script = ExtResource("2_p4upn")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-27.500023, 483)
+scale = Vector2(4.5859375, 1)
+texture = ExtResource("1_yp7o1")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(534, 480)
+scale = Vector2(4.421875, 1)
+texture = ExtResource("1_yp7o1")
