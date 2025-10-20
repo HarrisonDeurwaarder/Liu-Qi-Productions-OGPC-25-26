@@ -1,29 +1,45 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbvsqq3jt5whl"]
+[gd_scene load_steps=6 format=3 uid="uid://cbvsqq3jt5whl"]
 
 [ext_resource type="Script" uid="uid://cmeua5tnlvhd3" path="res://Scripts/character_body_2d.gd" id="1_5a7ea"]
 [ext_resource type="Texture2D" uid="uid://cksiax4efous3" path="res://Assets/icon.svg" id="1_go701"]
 [ext_resource type="Script" uid="uid://dmfq7jrrmkrnc" path="res://Scripts/sprite_2d.gd" id="2_5a7ea"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5a7ea"]
+size = Vector2(157, 152.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
+size = Vector2(248.7734, 128)
+
 [node name="WORLD" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(244, 360)
 script = ExtResource("1_5a7ea")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(258, 298)
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(259.00003, 346)
+position = Vector2(-6.1035156e-05, 3.9999695)
 scale = Vector2(1.2382805, 1.2773439)
 texture = ExtResource("1_go701")
 script = ExtResource("2_5a7ea")
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_5a7ea")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-27.500023, 483)
 scale = Vector2(4.5859375, 1)
+
+[node name="Icon" type="Sprite2D" parent="StaticBody2D"]
 texture = ExtResource("1_go701")
 
-[node name="Icon2" type="Sprite2D" parent="."]
-position = Vector2(534, 480)
-scale = Vector2(4.421875, 1)
+[node name="Icon2" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(122.43952, -3)
+scale = Vector2(0.9642249, 1)
 texture = ExtResource("1_go701")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(58.548557, -1)
+shape = SubResource("RectangleShape2D_8j60k")
