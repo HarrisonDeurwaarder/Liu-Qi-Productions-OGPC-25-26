@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbvsqq3jt5whl"]
+[gd_scene load_steps=9 format=3 uid="uid://cbvsqq3jt5whl"]
 
 [ext_resource type="Script" uid="uid://cmeua5tnlvhd3" path="res://Scripts/character_body_2d.gd" id="1_5a7ea"]
 [ext_resource type="Texture2D" uid="uid://cksiax4efous3" path="res://Assets/icon.svg" id="1_go701"]
@@ -10,6 +10,19 @@ size = Vector2(127.5, 127)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8j60k"]
 size = Vector2(141.24701, 133.99664)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8j60k"]
+texture = ExtResource("1_go701")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8j60k"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_8j60k")
 
 [node name="WORLD" type="Node2D"]
 
@@ -53,8 +66,8 @@ scale = Vector2(0.13202728, 1)
 texture = ExtResource("1_go701")
 
 [node name="Icon6" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(138.68483, 2)
-scale = Vector2(0.13202727, 0.99999994)
+position = Vector2(138, 2)
+scale = Vector2(0.114139706, 0.99999994)
 texture = ExtResource("1_go701")
 
 [node name="Icon5" type="Sprite2D" parent="StaticBody2D"]
@@ -106,3 +119,9 @@ texture = ExtResource("1_go701")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(76.756386, -3.001709)
 shape = SubResource("RectangleShape2D_8j60k")
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(3, 0)
+tile_set = SubResource("TileSet_8j60k")
+format = 2
+layer_0/tile_data = PackedInt32Array(327679, 65536, 0, 262143, 0, 1, 196607, 0, 1, 131071, 0, 1, 65535, 0, 0, -1, 65536, 1, -65537, 0, 0, -131073, 0, 0, -196608, 0, 0, -196607, 65536, 1, -196606, 0, 0, -196605, 0, 1, -196604, 0, 0, -196603, 65536, 1, -196602, 0, 0, -196601, 65536, 1, -196600, 0, 1, -196599, 0, 1, -196598, 0, 1, -196597, 65536, 0, -131061, 0, 1, -65525, 0, 0, 11, 65536, 0, 65547, 65536, 1, 131083, 65536, 1, 196619, 0, 0, 262155, 65536, 1, 327691, 0, 0, 327690, 65536, 0, 327689, 65536, 1, 327688, 0, 1, 327687, 0, 1, 327686, 0, 1, 327685, 0, 1, 327684, 0, 1, 327683, 0, 1, 327682, 0, 0, 327681, 0, 0, 327680, 0, 1, 393215, 0, 1, -131062, 0, 1)
