@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var grid_size: int = 64
-@export var grid_width: int = 10
-@export var grid_height: int = 10
+@export var grid_size: int = 128
+@export var grid_width: int = 32
+@export var grid_height: int = 32
 
 func _draw():
 	for x in range(grid_width + 1):
