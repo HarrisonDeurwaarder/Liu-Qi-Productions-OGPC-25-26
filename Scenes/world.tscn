@@ -79,7 +79,6 @@ shape = SubResource("RectangleShape2D_5a7ea")
 script = ExtResource("4_8j60k")
 
 [node name="TileMap" type="TileMap" parent="."]
-visible = false
 position = Vector2(3, 0)
 tile_set = SubResource("TileSet_8j60k")
 format = 2
