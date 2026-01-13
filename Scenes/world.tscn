@@ -6,9 +6,12 @@
 [ext_resource type="Script" uid="uid://bcjlrr2fedfre" path="res://Scenes/grid.gd" id="4_8j60k"]
 [ext_resource type="Texture2D" uid="uid://mhq8ogumn6nj" path="res://Assets/grass.png" id="6_5ukr8"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [ext_resource type="Texture2D" uid="uid://cq8curclno2wf" path="res://Assets/bush.png" id="7_o06y3"]
 >>>>>>> 6613817d23a4a9cb361c0a69042b7d5b6016a1b8
+=======
+>>>>>>> f25812ec93f0ed4e09a7523dcf87eeb82f0c0995
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5a7ea"]
 size = Vector2(128.01756, 128.00987)
@@ -25,13 +28,11 @@ texture = ExtResource("6_5ukr8")
 4:4/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_k7acu"]
-<<<<<<< Updated upstream
-=======
 physics_layer_0/collision_layer = 0
 physics_layer_0/collision_mask = 0
->>>>>>> Stashed changes
 sources/2 = SubResource("TileSetAtlasSource_o06y3")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ukr8"]
@@ -44,6 +45,8 @@ tile_size = Vector2i(128, 128)
 sources/2 = SubResource("TileSetAtlasSource_5ukr8")
 
 >>>>>>> 6613817d23a4a9cb361c0a69042b7d5b6016a1b8
+=======
+>>>>>>> f25812ec93f0ed4e09a7523dcf87eeb82f0c0995
 [node name="WORLD" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -72,14 +75,11 @@ shape = SubResource("RectangleShape2D_5a7ea")
 script = ExtResource("4_8j60k")
 
 [node name="TileMap2" type="TileMap" parent="."]
-<<<<<<< Updated upstream
-position = Vector2(297, -359)
-=======
 position = Vector2(3, -2)
->>>>>>> Stashed changes
 tile_set = SubResource("TileSet_k7acu")
 format = 2
 layer_0/tile_data = PackedInt32Array(1638391, 2, 0, 1900535, 2, 4, 1638395, 262146, 0, 1900539, 262146, 4, 2162679, 2, 0, 2424823, 2, 4, 2162683, 262146, 0, 2424827, 262146, 4, 2162671, 2, 0, 2424815, 2, 4, 2162675, 262146, 0, 2424819, 262146, 4, 2162687, 2, 0, 2424831, 2, 4, 2097155, 262146, 0, 2359299, 262146, 4, 2686967, 2, 0, 2949111, 2, 4, 2686971, 262146, 0, 2949115, 262146, 4, 2686959, 2, 0, 2949103, 2, 4, 2686963, 262146, 0, 2949107, 262146, 4, 2686975, 2, 0, 2949119, 2, 4, 2621443, 262146, 0, 2883587, 262146, 4, 1638399, 2, 0, 1900543, 2, 4, 1572867, 262146, 0, 1835011, 262146, 4, 1638383, 2, 0, 1900527, 2, 4, 1638387, 262146, 0, 1900531, 262146, 4, 1572871, 2, 0, 1835015, 2, 4, 1572875, 262146, 0, 1835019, 262146, 4, 2097159, 2, 0, 2359303, 2, 4, 2097163, 262146, 0, 2359307, 262146, 4, 2621447, 2, 0, 2883591, 2, 4, 2621451, 262146, 0, 2883595, 262146, 4, 3145735, 2, 0, 3407879, 2, 4, 3145739, 262146, 0, 3407883, 262146, 4, 3211263, 2, 0, 3473407, 2, 4, 3145731, 262146, 0, 3407875, 262146, 4, 3211255, 2, 0, 3473399, 2, 4, 3211259, 262146, 0, 3473403, 262146, 4, 3211247, 2, 0, 3473391, 2, 4, 3211251, 262146, 0, 3473395, 262146, 4)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -88,3 +88,5 @@ tile_set = SubResource("TileSet_o06y3")
 format = 2
 layer_0/tile_data = PackedInt32Array(-65536, 2, 0, -65535, 2, 0, -65534, 2, 0, -65533, 2, 0, 196612, 2, 0, 131076, 2, 0, 65540, 2, 0, 4, 2, 0, 262143, 2, 0, 196607, 2, 0, 131071, 2, 0, 65535, 2, 0, -1, 2, 0, -65532, 2, 0, 262148, 2, 0, 262147, 2, 0, 262146, 2, 0, 262145, 2, 0, 262144, 2, 0, 327679, 2, 0)
 >>>>>>> 6613817d23a4a9cb361c0a69042b7d5b6016a1b8
+=======
+>>>>>>> f25812ec93f0ed4e09a7523dcf87eeb82f0c0995
