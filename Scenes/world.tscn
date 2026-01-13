@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbvsqq3jt5whl"]
+[gd_scene load_steps=9 format=3 uid="uid://cbvsqq3jt5whl"]
 
 [ext_resource type="Script" uid="uid://cmeua5tnlvhd3" path="res://Scripts/character_body_2d.gd" id="1_5a7ea"]
 [ext_resource type="Texture2D" uid="uid://cksiax4efous3" path="res://Assets/icon.svg" id="1_go701"]
 [ext_resource type="Script" uid="uid://dmfq7jrrmkrnc" path="res://Scripts/sprite_2d.gd" id="2_5a7ea"]
 [ext_resource type="Script" uid="uid://bcjlrr2fedfre" path="res://Scenes/grid.gd" id="4_8j60k"]
 [ext_resource type="Texture2D" uid="uid://mhq8ogumn6nj" path="res://Assets/grass.png" id="6_5ukr8"]
-[ext_resource type="Texture2D" uid="uid://bt5ksyuam6sue" path="res://Assets/big_rock.png" id="6_o06y3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5a7ea"]
 size = Vector2(128.01756, 128.00987)
@@ -23,16 +22,6 @@ texture = ExtResource("6_5ukr8")
 
 [sub_resource type="TileSet" id="TileSet_k7acu"]
 sources/2 = SubResource("TileSetAtlasSource_o06y3")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k7acu"]
-texture = ExtResource("6_o06y3")
-3:2/size_in_atlas = Vector2i(3, 3)
-3:2/0 = 0
-3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24.089905, -24.095444, 23.270096, -23.818485, 24.654892, 24.372387, -24.643822, 23.81847)
-
-[sub_resource type="TileSet" id="TileSet_5v1tr"]
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_k7acu")
 
 [node name="WORLD" type="Node2D"]
 
@@ -66,8 +55,3 @@ position = Vector2(297, -359)
 tile_set = SubResource("TileSet_k7acu")
 format = 2
 layer_0/tile_data = PackedInt32Array(1638391, 2, 0, 1900535, 2, 4, 1638395, 262146, 0, 1900539, 262146, 4, 2162679, 2, 0, 2424823, 2, 4, 2162683, 262146, 0, 2424827, 262146, 4, 2162671, 2, 0, 2424815, 2, 4, 2162675, 262146, 0, 2424819, 262146, 4, 2162687, 2, 0, 2424831, 2, 4, 2097155, 262146, 0, 2359299, 262146, 4, 2686967, 2, 0, 2949111, 2, 4, 2686971, 262146, 0, 2949115, 262146, 4, 2686959, 2, 0, 2949103, 2, 4, 2686963, 262146, 0, 2949107, 262146, 4, 2686975, 2, 0, 2949119, 2, 4, 2621443, 262146, 0, 2883587, 262146, 4, 1638399, 2, 0, 1900543, 2, 4, 1572867, 262146, 0, 1835011, 262146, 4, 1638383, 2, 0, 1900527, 2, 4, 1638387, 262146, 0, 1900531, 262146, 4, 1572871, 2, 0, 1835015, 2, 4, 1572875, 262146, 0, 1835019, 262146, 4, 2097159, 2, 0, 2359303, 2, 4, 2097163, 262146, 0, 2359307, 262146, 4, 2621447, 2, 0, 2883591, 2, 4, 2621451, 262146, 0, 2883595, 262146, 4, 3145735, 2, 0, 3407879, 2, 4, 3145739, 262146, 0, 3407883, 262146, 4, 3211263, 2, 0, 3473407, 2, 4, 3145731, 262146, 0, 3407875, 262146, 4, 3211255, 2, 0, 3473399, 2, 4, 3211259, 262146, 0, 3473403, 262146, 4, 3211247, 2, 0, 3473391, 2, 4, 3211251, 262146, 0, 3473395, 262146, 4)
-
-[node name="TileMap3" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_5v1tr")
-format = 2
-layer_0/tile_data = PackedInt32Array(131070, 196608, 2, 196606, 196608, 2, 262142, 196608, 2, 327678, 196608, 2, 393214, 196608, 2, 458750, 196608, 2, 524286, 196608, 2)
