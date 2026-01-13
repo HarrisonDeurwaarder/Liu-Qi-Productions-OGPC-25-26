@@ -22,14 +22,14 @@ func _process(delta: float) -> void:
 			direction.y += 1
 
 		if direction != Vector2.ZERO:
+			var current_position = position
 			# 🔍 Check if moving in that direction would collide
 			var collision = move_and_collide(direction * step_size)
 			if collision == null:
 				target_position = position + direction * step_size
 				is_moving = true
 			else:
-				# optional: play a bump sound or animation here
-				pass
+				target_position = current_position
 
 	if is_moving:
 		# 🧩 Smoothly move toward target
